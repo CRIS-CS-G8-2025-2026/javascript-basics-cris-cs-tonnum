@@ -1,25 +1,21 @@
-// create a variable for first name
+
 const firstName = "Tonnam";
-
-// create a variable for last name
 const lastName = "Kavee";
-
-// create a variable for full name
 const fullName = firstName + " " + lastName;
 
-// select <h1> and update content with full name
+
 const h1 = document.querySelector("h1");
 h1.textContent = fullName;
 
-// select #age and update with your current age
+
 const age = 13;
 const ageElement = document.querySelector("#age");
 ageElement.textContent = `Age: ${age}`;
 
-// create a new paragraph after #age that shows age in 20 years
+
 const futureAge = age + 20;
 const p = document.createElement("p");
 p.textContent = `In twenty years, your age will be ${futureAge} years old.`;
 
-// insert the paragraph after #age
+
 ageElement.after(p);
